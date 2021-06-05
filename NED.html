@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+    <style>
+        .button {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .button span:after {
+            content: "\00bb";
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        
+        .button:hover {
+            padding-right: 25px;
+            background-color: red;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="/pngtree-vector-educational-institute-icon-png-image_4254984.jpg " height="50px" width="70px" alt="logo" class="my-0 py-0" /> NEDians
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+        <div class="collapse navbar-collapse text-dark" id="navbarnav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span><i class="fas fa-home"></i></span> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span><i class="fas fa-address-card"></i></span> About Us</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span><i class="fas fa-angle-double-right"></i></span> More
+            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Our blog</a>
+                        <a class="dropdown-item" href="#">action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><span><i class="fas fa-phone-alt"></i></span> Contact Us</a
+              >
+            </div>
+          </li>
+        </ul>
+        <form action="" class="form-inline">
+          <button
+            type="button"
+            class="button btn btn-primary mx-1"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            <span><i class="fas fa-sign-in-alt"></i></span> Sign In
+          </button>
+          <button
+            type="button"
+            class="button btn btn-primary mx-1"
+            data-toggle="modal"
+            data-target="#exampleModal1"
+          >
+            <span><i class="fas fa-user-plus"></i></span> Sign Up
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">NEDians</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Already have registered? Join In now! <br />
+            <input
+              class="form-control my-3"
+              type="email"
+              placeholder="E-mail"
+            />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="password"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="button btn btn-primary">
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">NEDians!</h5>
+            <p>The Best!</p>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Haven't registered yet?<br />
+            <div class="form-group">
+              <p class="card-text text-secondary text-left mb-0">First Name</p>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+              <p class="card-text text-secondary text-left mb-0">last Name</p>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+              <p class="card-text text-secondary text-left mb-0">E-mail</p>
+              <input type="email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <p class="card-text text-secondary text-left mb-0">
+                Password(6 or more characters)
+              </p>
+              <input type="password" class="form-control" />
+            </div>
+            <div class="form-group">
+              <p class="text-secondary">
+                by clicking Register now!,you agree to NEDians's
+                <a href="" class="text-dark">user agreement</a>,
+                        <a href="" class="text-dark">Cookie policy</a> and
+                        <a href="" class="text-dark">privacy policy</a>
+                        </p>
+                    </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="button btn btn-primary">
+              Register now!
+            </button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="container-fluid" style=>
+            <div class="row w-100 vh-100 d-flex justify-content-center align-items-center" style=" 
+            background-image: url('https://cdna.artstation.com/p/assets/images/images/022/981/438/large/pascal-bergeron-wallpaper-tri1.jpg?1577574833');
+          ">
+                <div class="container" style="color: white;">
+                    <div class=" row ">
+                        <div class="col-md-12 ">
+                            <h1 class="py-4 ">NEDians!</h1>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quaerat fugit animi ea ad? Eius delectus illum totam obcaecati commodi alias magnam at animi iste aliquam tenetur vero rem error possimus, repudiandae nobis id odio velit ea quos nihil
+                                veritatis cupiditate doloremque? Numquam laboriosam odio, sit obcaecati natus voluptatem, aperiam eaque consequuntur enim dolorem debitis blanditiis. Dolorum, blanditiis. Ab aliquid repudiandae consectetur dolorum eveniet
+                                magni voluptatum quia nisi odio, consequuntur qui vitae suscipit reiciendis odit error labore voluptas deleniti? Animi, possimus velit, culpa obcaecati rerum dignissimos, sit vero tempora facere eos vel optio illo nemo.
+                                Atque earum iusto provident incidunt?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div id="carouselExampleControls " class="carousel slide " data-ride="carousel ">
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active ">
+                                <img src="https://source.unsplash.com/weekly?classroom" class="d-block w-100 " alt="school " />
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="https://source.unsplash.com/weekly?students" class="d-block w-100 " alt="students " />
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="https://source.unsplash.com/weekly?institute" class="d-block w-100 " alt="classroom " />
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
+                            <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                            <span class="sr-only ">Previous</span>
+                        </a>
+                        <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
+                            <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                            <span class="sr-only ">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-7 ">
+                    <div class="card ">
+                        <div class="card-body bg-light ">
+                            <div class="form-group ">
+                                <p class="card-text text-secondary text-left mb-0 ">
+                                    Full Name
+                                </p>
+                                <input type="text " class="form-control " />
+                            </div>
+                            <div class="form-group ">
+                                <p class="card-text text-secondary text-left mb-0 ">
+                                    E-mail
+                                </p>
+                                <input type="email " class="form-control " />
+                            </div>
+                            <div class="form-group ">
+                                <p class="card-text text-secondary text-left mb-0 ">
+                                    Password(6 or more characters)
+                                </p>
+                                <input type="password " class="form-control " />
+                            </div>
+                            <div class="form-group ">
+                                <p class="text-secondary ">
+                                    by clicking Register now,you agree to NEDians's
+                                    <a href="#" class="text-dark ">user agreement</a>,
+                                    <a href="#" class="text-dark ">Cookie policy</a> and
+                                    <a href="#" class="text-dark ">privacy policy</a>
+                                </p>
+                            </div>
+                            <div>
+                                <button class="button btn text-white p-2 bg-primary btn-block ">
+                      Register now
+                    </button>
+                            </div>
+                            <div>
+                                <h6 class="text-secondary text-center ">
+                                    already have Registered?
+                                    <a href=" " class="button ">Join in now!</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <ul class="bg-warning">
+                                <h3 class="py-3">
+                                    <span><i
+                          class="fas fa-star-half "
+                          style="color: whitesmoke ">
+                    </i>
+                    </span> Salient features
+                                </h3>
+                                <li>Highly Qualified Teachers</li>
+                                <li>Flexible Timings</li>
+                                <li>Weekly Tests</li>
+                                <li>Computer Labs</li>
+                                <li>FREE Practical journals</li>
+                                <li>No Thukai</li>
+                                <li>Picnic every 6 months</li>
+                                <li>Diggi ko bhe nikal diya ha ab to register krdo...</li>
+                                <hr />
+                                <h3 class="py-3 ml-5x">
+                                    <span><i class="fas fa-chevron-circle-down"></i></span> More
+                                </h3>
+                                <li><a href="# " class="text-dark ">Syllabus schedule</a></li>
+                                <li><a href="# " class="text-dark ">Test pattern</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row w-100 vh-100 d-flex justify-content-center align-items-center" style=" 
+            background-image: url('https://learn.studywithemoeles.com/wp-content/uploads/2018/10/background-board-book-733854-3-op.png');
+            ">
+                    <h2>Why NEDians?</h2>
+                    <p style="text-align: center;">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error fuga voluptatum iusto, excepturi obcaecati ipsam inventore iste sequi accusamus dolore aspernatur fugiat non! Aspernatur dignissimos saepe reiciendis doloribus, assumenda pariatur, rerum
+                        amet quod perferendis repellat dolor aperiam, fugit obcaecati voluptatum non quasi eos ipsa placeat neque. Impedit repellendus suscipit quae magni expedita laboriosam quam hic temporibus repellat, libero, amet fugit dolorem nobis
+                        nostrum rerum aliquam unde minima debitis quasi commodi mollitia error eum! Porro architecto dignissimos adipisci sapiente, aliquam voluptates in necessitatibus quidem tenetur provident ducimus quos quasi est autem nemo dolorem
+                        harum dolorum accusantium asperiores iusto impedit vero! Asperiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas mollitia at non autem nihil molestias numquam quam, voluptas optio sit cum. Natus ex ipsum dicta
+                        nemo, non doloribus cum, error ducimus ad rerum fugiat explicabo corporis, impedit voluptatum dignissimos quisquam nisi saepe reiciendis. Nesciunt, officiis beatae voluptate numquam porro nobis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color: burlywood;">
+            <div class="row py-2 ">
+                <div class="col-md-5 ">
+                    <span><i class="fas fa-angle-double-right "></i></span> Inspired by Ranchordas Shamardas Chanchar <br /><span><i class="far fa-copyright "></i
+          ></span> copyright 2020
+                </div>
+                <div class="col-md-2 "></div>
+                <div class="col-md-5 float-right text-right ">
+                    <span><i class="fa-2x px-1 fab fa-facebook-square "></i></span>
+                    <span><i class="fa-2x fab fa-instagram px-1 "></i></span>
+                    <span><i class="fa-2x far fa-envelope px-1 "></i></span>
+                    <span><i class="fa-2x fab fa-linkedin px-1 "></i></span> <br />
+                    <a class="float-right text-dark " href="# "><span><i class="fas fa-phone-alt "></i></span> Contact Us !</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+      crossorigin="anonymous "
+    ></script>
+  </body>
+</html>
